@@ -13,14 +13,14 @@ Regras
 
 
 Condições:
-Vitória - o utilizador insere as letras corretas antes de atingir o número máximo de erros (6)
-Derrota - o utilizador atinge o número máximo de erros (6) antes de descobrir todas as letras da palavra
+-Vitória - o utilizador insere as letras corretas antes de atingir o número máximo de erros (6)
+-Derrota - o utilizador atinge o número máximo de erros (6) antes de descobrir todas as letras da palavra
 
 
 Limitações
-Uma tentativa = uma letra
-Inputs = A a Z
-Máximo de 6 erros
+-Uma tentativa = uma letra
+-Inputs = A a Z
+-Máximo de 6 erros
 
 
 
