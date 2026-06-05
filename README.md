@@ -22,6 +22,19 @@ Limitações
 - Inputs = A a Z
 - Máximo de 6 erros
 
+Requisitos funcionais
+- O programa deve selecionar aleatoriamente um palavra 
+- O programa deve representar o nº de letras da palavra selecionada por traços;
+- O programa permite ao utilizador inserir uma letra por tentativa
+- O programa valida se a letra inserida faz parte da palavra selecionada
+- O programa exibe o progresso da descoberta da palavra, exibindo os traços em falta para preencher e as letras selecionadas corretas nos sítio correto da palavra. As letras selecionadas de forma errada aparecem num canto abaixo.
+- O programa deve exibir uma mensagem de final de jogo (Vitória ou Derrota)
+
+Requisitos não funcionais:
+- Validade input do utilizador. Aceitar a introdução de apenas letras (maisculas e minusculas de igual forma), ignorar números e caracteres especiais
+- Compatível com o Python
+- Apresentar mensagens simples e claras ao utilizador facilitando a compreensão do mesmo sobre a situação de jogo a cada momento.
+
 
 
 
