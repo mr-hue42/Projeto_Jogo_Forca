@@ -19,7 +19,11 @@ letras = [" _ "] * len(palavra_selecionada)
 
 letras_usadas = [ ]
 
-while " _ " in letras:
+erros = 0
+
+max_erros= 6
+
+while " _ " in letras and erros < max_erros::
     print(" ".join(letras))
     
     letra=input("Introduza uma letra:")
@@ -36,6 +40,10 @@ while " _ " in letras:
                 letras[i] = letra
                 
     else:
-        print("Erro")
-print(f"Vitória!! A palavra era: {palavra_selecionada}")
+        print("Letra errada")
+        erros += 1
+if " _ " not in letras:
+    print(f"Vitória!! A palavra era: {palavra_selecionada}")
+else:
+    print(f"Derrota!! A palavra era: {palavra_selecionada}")
 
