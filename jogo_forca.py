@@ -1,6 +1,6 @@
 import random
 
-def jogar_forca():
+def jogar_forca():#criar função para ser importada para ficheiro main
     print("Bem vindo(a) ao jogo da forca")
     print()
     print("Regras:")
@@ -12,10 +12,10 @@ def jogar_forca():
     print("-Derrota: Atingir o nº máximo de erros (6) antes de descobrir a palavra secreta")
 
 
-
+#criar pool de palavras a selecionar para ser a palavra secreta
     palavras = ["Mesa","Cadeira","Livro","Copo","Mochila","Garrafa","Teclado",
                 "Espelho", "Candeeiro","Tesoura"]
-    
+#controlar o inicio do jogo e inicio de novas rondas  
     jogar=input("Queres jogar? (Escreva jogar para o jogo iniciar ou sair para abandonar o jogo): ").lower()
     
     while jogar == "jogar":
@@ -25,11 +25,11 @@ def jogar_forca():
         letras = [" _ "] * len(palavra_selecionada)
     
         letras_usadas = [ ]
-    
+#definição do nº de erros    
         erros = 0
     
         max_erros= 6
-    
+#analisar se as letras são repetidas, se estão na palavra  
         while " _ " in letras and erros < max_erros:
             print(" ".join(letras))
     
@@ -48,7 +48,7 @@ def jogar_forca():
                 
             else:
                 print("Letra errada")
-                erros += 1
+                erros += 1 #contagem de erros
         if " _ " not in letras:
             print(f"Vitória!! A palavra era: {palavra_selecionada}")
         else:
