@@ -36,5 +36,8 @@ Requisitos não funcionais:
 - Apresentar mensagens simples e claras ao utilizador facilitando a compreensão do mesmo sobre a situação de jogo a cada momento.
 
 
+Descrição
+
+Programa do jogo desenvolvido em python, no qual o jogo exibe uma palavra secreta em traços e o jogador deverá descobrir a palavra sugerindo letras que possam fazer parte da palavra secreta.
 
 
