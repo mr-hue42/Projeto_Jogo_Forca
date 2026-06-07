@@ -8,5 +8,12 @@ print("-O número máximo de tentativas erradas é igual a 6")
 print("-Vitória: Descobrir a palavra secreta antes de atingir o nº máximo de erros")
 print("-Derrota: Atingir o nº máximo de erros (6) antes de descobrir a palavra secreta")
 
+import random
 
+palavras = ["Mesa","Cadeira","Livro","Copo","Mochila","Garrafa","Teclado",
+            "Espelho", "Candeeiro","Tesoura"]
+
+palavra_selecionada = random.choice(palavras).lower()
+
+letras = [" _ "] * len(palavra_selecionada)
 
