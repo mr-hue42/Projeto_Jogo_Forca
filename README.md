@@ -52,3 +52,39 @@ Execução
  - Fazer o download dos ficheiros main.py e jogo.py
  - Executar o programa
 
+Exemplo de utilização
+
+
+
+Bem vindo(a) ao jogo da forca
+
+Regras:
+
+-Cada traço representa uma letra da palavra secreta
+-Em cada tentiva deverá indicar uma letra
+-O número máximo de tentativas erradas é igual a 6
+-Vitória: Descobrir a palavra secreta antes de atingir o nº máximo de erros
+-Derrota: Atingir o nº máximo de erros (6) antes de descobrir a palavra secreta
+Queres jogar? (Escreva jogar para o jogo iniciar ou sair para abandonar o jogo): jogar
+ _   _   _   _   _   _   _ 
+Introduza uma letra:e
+['e']
+Letra errada
+ _   _   _   _   _   _   _ 
+Introduza uma letra:o
+['e', 'o']
+Letra errada
+ _   _   _   _   _   _   _ 
+Introduza uma letra:a
+['e', 'o', 'a']
+ _  a  _   _  a  _  a
+Introduza uma letra:g
+['e', 'o', 'a', 'g']
+g a  _   _  a  _  a
+Introduza uma letra:r
+['e', 'o', 'a', 'g', 'r']
+g a r r a  _  a
+Introduza uma letra:f
+['e', 'o', 'a', 'g', 'r', 'f']
+Vitória!! A palavra era: garrafa
+Queres jogar novamente? (Escreva jogar para o jogo novamente ou sair para abandonar o jogo): 
