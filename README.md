@@ -46,3 +46,9 @@ Regras
 - O jogador deve sugerir apenas uma letra de a-z por ronda, não sendo aceite mais do que uma letra por ronda ou qualquer outro caracter
 - O jogador poderá cometer até 6 erros, após cometer 6 erros perdeu o jogo.
 - Um erro é apenas quando o jogador sugere uma letra que não consta da palavra secreta, não constituindo um erro a introdução de caracteres que não sejam letras nem de letras repetidas
+
+Execução
+ - Ter Python 3
+ - Fazer o download dos ficheiros main.py e jogo.py
+ - Executar o programa
+
