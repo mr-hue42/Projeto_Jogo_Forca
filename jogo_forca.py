@@ -23,7 +23,7 @@ erros = 0
 
 max_erros= 6
 
-while " _ " in letras and erros < max_erros::
+while " _ " in letras and erros < max_erros:
     print(" ".join(letras))
     
     letra=input("Introduza uma letra:")
