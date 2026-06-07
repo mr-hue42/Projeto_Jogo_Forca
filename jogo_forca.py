@@ -16,7 +16,18 @@ def jogar_forca():#criar função para ser importada para ficheiro main
     palavras = ["Mesa","Cadeira","Livro","Copo","Mochila","Garrafa","Teclado",
                 "Espelho", "Candeeiro","Tesoura"]
 #controlar o inicio do jogo e inicio de novas rondas  
-    jogar=input("Queres jogar? (Escreva jogar para o jogo iniciar ou sair para abandonar o jogo): ").lower()
+    while True:
+       try:
+           jogar=input("Queres jogar? (Escreva jogar para o jogo iniciar ou sair para abandonar o jogo): ").lower()
+        
+           if jogar not in ["jogar","sair"]:
+                raise ValueError ("Resposta inválida")
+           break
+       except ValueError as erro:
+                print(f'Erro:{erro}')
+    
+    if jogar== "sair":
+        print("Obrigado. Volte sempre")
     
     while jogar == "jogar":
 
@@ -32,9 +43,19 @@ def jogar_forca():#criar função para ser importada para ficheiro main
 #analisar se as letras são repetidas, se estão na palavra  
         while " _ " in letras and erros < max_erros:
             print(" ".join(letras))
-    
-            letra=input("Introduza uma letra:")
-    
+            while True:
+                try:
+                    letra=input("Introduza uma letra:")
+                    if letra == "":
+                        raise ValueError("Input vazio")
+                    if len(letra) != 1:
+                        raise ValueError("Mais de um caráter")
+                    if not letra.isalpha():
+                        raise ValueError("Não é uma letra")
+                    break
+                except ValueError as erro:
+                    print(f"Erro: {erro}. Tenta novamente")
+                
             if letra in letras_usadas:
                 print("Letra já utilizada")
                 continue
@@ -53,7 +74,16 @@ def jogar_forca():#criar função para ser importada para ficheiro main
             print(f"Vitória!! A palavra era: {palavra_selecionada}")
         else:
             print(f"Derrota!! A palavra era: {palavra_selecionada}")
-        jogar= input("Queres jogar novamente? (Escreva jogar para continuar a jogar): ")
+        
+        while True:
+           try:
+               jogar=input("Queres jogar novamente? (Escreva jogar para o jogo novamente ou sair para abandonar o jogo): ").lower()
+            
+               if jogar not in ["jogar","sair"]:
+                    raise ValueError ("Resposta inválida")
+               break
+           except ValueError as erro:
+                    print(f'Erro:{erro}')
 
         print("Obrigado por jogares")
 
