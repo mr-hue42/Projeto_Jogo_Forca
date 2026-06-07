@@ -40,4 +40,9 @@ Descrição
 
 Programa do jogo desenvolvido em python, no qual o jogo exibe uma palavra secreta em traços e o jogador deverá descobrir a palavra sugerindo letras que possam fazer parte da palavra secreta.
 
-
+Regras
+- A palavra secreta é escolhida de forma aleatória de entre um conjunto pré-determinado de palavras;
+- As letras da palavra secreta são exibidas como traços
+- O jogador deve sugerir apenas uma letra de a-z por ronda, não sendo aceite mais do que uma letra por ronda ou qualquer outro caracter
+- O jogador poderá cometer até 6 erros, após cometer 6 erros perdeu o jogo.
+- Um erro é apenas quando o jogador sugere uma letra que não consta da palavra secreta, não constituindo um erro a introdução de caracteres que não sejam letras nem de letras repetidas
